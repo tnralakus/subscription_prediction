@@ -41,10 +41,18 @@ Hyperparameter tuning using search algorithms (e.g., grid search) on existing mo
 
 ## Model Performance & Reliability
 
+The Logistic Regression model, especially after balancing with SMOTETomek, consistently demonstrated the best balance of recall for class 1 and acceptable overall performance. Its Recall of 0.615 means it correctly identified over 61% of the actual subscribers, a crucial improvement for the business objective. While the initial SVC with balanced data had a very high recall, its extremely low precision and accuracy made it impractical. The tuned SVC improved slightly but still lagged behind Logistic Regression in overall utility.
 
 ## Recommendations
 
-## Summation and Forward Planning
+Based on SHAP interpretability and model performance metrics, the bank should prioritize age-based segmentation and cellular contact methods for its marketing campaigns. Analysis of monthly variations in subscriptions and specific demographics like administrative professionals can further optimize scheduling and messaging. By focusing on recall over accuracy through techniques like SMOTETomek, the model better identifies potential subscribers, though continuous monitoring and periodic retraining are necessary to maintain relevance amid changing market conditions.
+
+## Conclusion
+
+This analysis established a robust machine learning pipeline to predict term deposit subscriptions. By utilizing SMOTETomek and recall-focused hyperparameter tuning, I developed models that outperfromed simple baselines in identifying potential customers. 
+SHAP analysis revealed 'age' and 'contact_cellular' as primary predictive drivers. 
+
+These insights enable the bank to refine marketing strategies, optimize resource allocation, and improve acquisition rates for new term deposit clients.
 
 ## Setup and Installation
 
